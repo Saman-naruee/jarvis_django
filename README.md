@@ -40,7 +40,7 @@ A Telegram-based AI assistant inspired by Iron Man's JARVIS, built with Django a
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/jarvis_django.git
+git clone https://github.com/Saman-naruee/jarvis_django.git
 cd jarvis_django
 ```
 
