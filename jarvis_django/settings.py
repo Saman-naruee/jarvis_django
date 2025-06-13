@@ -39,6 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    # Custom apps
+    'users',  # User management app
+    'assistant',  # Assistant app
+    'conversations',  # Conversation app
 ]
 
 MIDDLEWARE = [
@@ -133,3 +137,17 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+AUTH_USER_MODEL = 'users.User'
+
+
+# AI Provider Settings
+AI_PROVIDER = config('AI_PROVIDER', default='gemini')  # or 'openai'
+AI_PROVIDER_SETTINGS = {
+    'openai': {
+        'api_key': config('OPENAI_API_KEY', default=None),
+        'model': config('OPENAI_MODEL', default='gpt-3.5-turbo'),
+    },
+    'gemini': {
+        'api_key': config('GEMINI_API_KEY', default=None),
+    }
+}

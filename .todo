@@ -5,12 +5,12 @@ The status indicators are:
 [X] - Not started/not edited yet
 
 Phase 1: Project Setup & Basic Structure [E]
-    Backend Setup: [E]
+    Backend Setup: [C]
         [C] Create Django project and configure settings
-        [E] Set up PostgreSQL database
-        [X] Create core apps (assistant, users, conversations)
-        [E] Configure environment variables
-        [X] Set up project structure for AI providers
+        [C] Set up PostgreSQL database
+        [C] Create core apps (assistant, users, conversations)
+        [C] Configure environment variables
+        [C] Set up project structure for AI providers
     
     Basic Telegram Integration: [X]
         [X] Create Telegram bot and get API keys
