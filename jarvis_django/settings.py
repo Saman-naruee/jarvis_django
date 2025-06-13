@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'users',  # User management app
     'assistant',  # Assistant app
     'conversations',  # Conversation app
+    'telegram_bot',  # Telegram bot app
 ]
 
 MIDDLEWARE = [
@@ -151,3 +152,8 @@ AI_PROVIDER_SETTINGS = {
         'api_key': config('GEMINI_API_KEY', default=None),
     }
 }
+
+
+# Telegram Bot Settings
+TELEGRAM_BOT_TOKEN = config('TELEGRAM_BOT_TOKEN')
+TELEGRAM_WEBHOOK_URL = config('TELEGRAM_WEBHOOK_URL', '')
